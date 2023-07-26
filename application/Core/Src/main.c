@@ -187,6 +187,7 @@ int main(void)
   {
 	  __WFI();
 	  __NOP();
+	  __NOP();
 
     /* USER CODE END WHILE */
 
