@@ -1,0 +1,30 @@
+18:25:13 **** Incremental Build of configuration Debug for project hal_test ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:32: warning: passing argument 2 of 'HAL_SPI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+   97 |   HAL_SPI_Transmit_DMA(&hspi1, &buffer, 2);
+      |                                ^~~~~~~
+      |                                |
+      |                                uint16_t (*)[32] {aka short unsigned int (*)[32]}
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:330,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h:679:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint16_t (*)[32]' {aka 'short unsigned int (*)[32]'}
+  679 | HAL_StatusTypeDef HAL_SPI_Transmit_DMA(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "hal_test.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\inflamer\STM32CubeIDE\aquapark\hal_test\STM32F103RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="hal_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: hal_test.elf
+ 
+arm-none-eabi-size   hal_test.elf 
+arm-none-eabi-objdump -h -S  hal_test.elf  > "hal_test.list"
+   text	   data	    bss	    dec	    hex	filename
+   8008	     20	   1788	   9816	   2658	hal_test.elf
+Finished building: default.size.stdout
+ 
+Finished building: hal_test.list
+ 
+
+18:25:15 Build Finished. 0 errors, 1 warnings. (took 1s.756ms)
+
