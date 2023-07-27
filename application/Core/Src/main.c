@@ -23,7 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 //#include "test.h"
-#include "fonts.h"
+#include "font8sans.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,16 +43,25 @@
 
 /* Private variables ---------------------------------------------------------*/
 
-TIM_HandleTypeDef htim6;
-
 /* USER CODE BEGIN PV */
+
+
+
+typedef struct type21{ uint8_t x; uint8_t y;}type21;
+
+//typedef struct type24 { type21 x[3]; } type24;
+
+volatile type21 test123[3] ={{1,2},{1,2},{1,2}};
+
+
 //bool bufrw=true;
 //bool wfdt=true;
 uint8_t str_cnt=0;
 uint8_t LP_lock = 0;
 uint16_t LP_buffer[32]; //nthStr - 2*16 + (nth+8)Str - 2*16
 
-uint16_t display_buffer[16][2] = {
+uint16_t display_buffer[16][2];/*=
+{
 		{0x8000,0x0001},
 		{0x0800,0x0010},
 		{0x0080,0x0100},
@@ -72,7 +81,7 @@ uint16_t display_buffer[16][2] = {
 		{0x0080,0x0100},
 		{0x0800,0x0010},
 		{0x8000,0x0001}
-};
+};*/
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -82,6 +91,7 @@ static void MX_DMA_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_TIM6_Init(void);
+static void MX_RTC_Init(void);
 /* USER CODE BEGIN PFP */
 void cpToLPBuffer(void);
 /* USER CODE END PFP */
@@ -125,6 +135,7 @@ int main(void)
   MX_TIM3_Init();
   MX_USB_DEVICE_Init();
   MX_TIM6_Init();
+  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
   LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 
@@ -133,7 +144,7 @@ int main(void)
   LL_TIM_ClearFlag_UPDATE(TIM3);
   LL_TIM_EnableIT_UPDATE(TIM3);
   LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH4);
-  LL_TIM_OC_SetCompareCH4(TIM3, 170);//14000);
+  LL_TIM_OC_SetCompareCH4(TIM3, 29000);//170 - 15001);
 
 	cpToLPBuffer();
 	/*
@@ -160,11 +171,44 @@ int main(void)
   LL_SPI_Enable(SPI1);
 
 
+  __NOP();
+  //uint8_t pos = font_8ptChrsDescr[4]->position;
+  //uint8_t siz = symb_8s_siz(4);
 
-  uint8_t pos = symb_8s_pos('0');
-  uint8_t siz = symb_8s_siz('0');
+  volatile uint32_t test;
+//  test = '0' - font_8pt_info.stchar;
+  test = test123->x;
+  __NOP();
+//  test = font_8ptChrsDescr[4].position;
+  test = font_8ptChrsDescr[4].size;
+  test = font_8ptChrsDescr[4].position;
+  test = font_8pt_info.stchar;
+  test = font_8pt_info.endchar;
+  test = font_8pt_info.sp_width;
+  test = font_8pt_info.height;
+  test = font_8ptBtmps[6];
 
-  display_buffer[0][0] = font_8ptBtmps[0];
+
+  uint8_t rpos = '9'-font_8pt_info.stchar;
+  uint8_t bpos = font_8ptChrsDescr[rpos].position;
+  uint8_t chw = font_8ptChrsDescr[rpos].size;
+  uint8_t rpos1 = ':'-font_8pt_info.stchar;
+  uint8_t bpos1 = font_8ptChrsDescr[rpos1].position;
+
+
+		  for (uint8_t i=0;i<8;i++){
+			  display_buffer[i][0] = (font_8ptBtmps[bpos+i]<<8) | (font_8ptBtmps[bpos1+i]<<(8-2-chw));
+		  }
+  cpToLPBuffer();
+
+
+
+
+
+
+  //pos = font_8pt_info.descr_arr[('0' - font_8pt_info.stchar)].position;
+
+//  display_buffer[0][0] = font_8ptBtmps[0];
 
   //LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_3);
 /*
@@ -227,6 +271,21 @@ void SystemClock_Config(void)
   {
 
   }
+  LL_RCC_LSI_Enable();
+
+   /* Wait till LSI is ready */
+  while(LL_RCC_LSI_IsReady() != 1)
+  {
+
+  }
+  LL_PWR_EnableBkUpAccess();
+  if(LL_RCC_GetRTCClockSource() != LL_RCC_RTC_CLKSOURCE_LSI)
+  {
+    LL_RCC_ForceBackupDomainReset();
+    LL_RCC_ReleaseBackupDomainReset();
+    LL_RCC_SetRTCClockSource(LL_RCC_RTC_CLKSOURCE_LSI);
+  }
+  LL_RCC_EnableRTC();
   LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSE_DIV_1, LL_RCC_PLL_MUL_9);
   LL_RCC_PLL_Enable();
 
@@ -253,6 +312,41 @@ void SystemClock_Config(void)
     Error_Handler();
   }
   LL_RCC_SetUSBClockSource(LL_RCC_USB_CLKSOURCE_PLL_DIV_1_5);
+}
+
+/**
+  * @brief RTC Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_RTC_Init(void)
+{
+
+  /* USER CODE BEGIN RTC_Init 0 */
+
+  /* USER CODE END RTC_Init 0 */
+
+  LL_RTC_InitTypeDef RTC_InitStruct = {0};
+
+    LL_PWR_EnableBkUpAccess();
+    /* Enable BKP CLK enable for backup registers */
+    LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_BKP);
+  /* Peripheral clock enable */
+  LL_RCC_EnableRTC();
+
+  /* USER CODE BEGIN RTC_Init 1 */
+
+  /* USER CODE END RTC_Init 1 */
+
+  /** Initialize RTC and set the Time and Date
+  */
+  RTC_InitStruct.AsynchPrescaler = 0xFFFFFFFFU;
+  LL_RTC_Init(RTC, &RTC_InitStruct);
+  LL_RTC_SetAsynchPrescaler(RTC, 0xFFFFFFFFU);
+  /* USER CODE BEGIN RTC_Init 2 */
+
+  /* USER CODE END RTC_Init 2 */
+
 }
 
 /**
@@ -394,26 +488,25 @@ static void MX_TIM6_Init(void)
 
   /* USER CODE END TIM6_Init 0 */
 
-  TIM_MasterConfigTypeDef sMasterConfig = {0};
+  LL_TIM_InitTypeDef TIM_InitStruct = {0};
+
+  /* Peripheral clock enable */
+  LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM6);
+
+  /* TIM6 interrupt Init */
+  NVIC_SetPriority(TIM6_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),2, 0));
+  NVIC_EnableIRQ(TIM6_IRQn);
 
   /* USER CODE BEGIN TIM6_Init 1 */
 
   /* USER CODE END TIM6_Init 1 */
-  htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 1;
-  htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim6.Init.Period = 36000;
-  htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
-  if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim6, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
+  TIM_InitStruct.Prescaler = 1;
+  TIM_InitStruct.CounterMode = LL_TIM_COUNTERMODE_UP;
+  TIM_InitStruct.Autoreload = 36000;
+  LL_TIM_Init(TIM6, &TIM_InitStruct);
+  LL_TIM_EnableARRPreload(TIM6);
+  LL_TIM_SetTriggerOutput(TIM6, LL_TIM_TRGO_RESET);
+  LL_TIM_DisableMasterSlaveMode(TIM6);
   /* USER CODE BEGIN TIM6_Init 2 */
 
   /* USER CODE END TIM6_Init 2 */

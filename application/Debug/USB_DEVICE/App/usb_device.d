@@ -35,6 +35,7 @@ USB_DEVICE/App/usb_device.o: ../USB_DEVICE/App/usb_device.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rtc.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h \
@@ -86,6 +87,7 @@ USB_DEVICE/App/usb_device.o: ../USB_DEVICE/App/usb_device.c \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rtc.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h:
