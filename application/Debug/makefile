@@ -67,8 +67,8 @@ all: main-build
 main-build: application.elf secondary-outputs
 
 # Tool invocations
-application.elf application.map: $(OBJS) $(USER_OBJS) C:\Users\inflamer\STM32CubeIDE\aquapark\application\STM32F103RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "application.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\inflamer\STM32CubeIDE\aquapark\application\STM32F103RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="application.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+application.elf application.map: $(OBJS) $(USER_OBJS) D:\aquapark\aquapark\application\STM32F103RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "application.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\aquapark\aquapark\application\STM32F103RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="application.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

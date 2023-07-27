@@ -17,12 +17,14 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <fontsdescr.h>
 #include "main.h"
 #include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+//#include "test.h"
+#include "fonts.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -153,6 +155,14 @@ int main(void)
   //LL_SPI_EnableIT_TXE(SPI1);
 
   LL_SPI_Enable(SPI1);
+
+
+  uint8_t symbol_pos = consolas_8ptFontInfo.descr_arr[consolas_8ptFontInfo.stchar -'0'].position;
+  uint8_t symbol_siz = consolas_8ptFontInfo.descr_arr[consolas_8ptFontInfo.stchar -'0'].size;
+  uint8_t symbol_h = consolas_8ptFontInfo.height;
+  uint8_t symbol_w = consolas_8ptFontInfo.width;
+
+  display_buffer[0][0] = consolas_8ptBitmaps[0];
 
   //LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_3);
 /*
