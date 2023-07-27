@@ -79,7 +79,7 @@ static void MX_DMA_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_TIM3_Init(void);
 /* USER CODE BEGIN PFP */
-
+void cpToLPBuffer(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -130,8 +130,9 @@ int main(void)
   LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH4);
   LL_TIM_OC_SetCompareCH4(TIM3, 170);//14000);
 
-
-  //update buffer
+	cpToLPBuffer();
+	/*
+  //update LP buffer
   //nthStr - 2*16 + (nth+8)Str - 2*16
   for (uint8_t i=0;i<8;i++){
 	  LP_buffer [4*i] = display_buffer[i+8][0];
@@ -139,7 +140,7 @@ int main(void)
 	  LP_buffer [4*i+2] = display_buffer[i][0];
 	  LP_buffer [4*i+3] = display_buffer[i][1];
   };
-
+*/
 
   //LL_DMA_ConfigTransfer(DMAx, Channel, Configuration)
   LL_DMA_ConfigAddresses(DMA1, LL_DMA_CHANNEL_3, (uint32_t)&LP_buffer[4],LL_SPI_DMA_GetRegAddr(SPI1) ,LL_DMA_DIRECTION_MEMORY_TO_PERIPH);
@@ -154,7 +155,7 @@ int main(void)
   LL_SPI_Enable(SPI1);
 
   //LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_3);
-
+/*
   __WFI();
   while(LL_SPI_IsActiveFlag_BSY(SPI1));
   LL_GPIO_SetOutputPin(LP_LE_GPIO_Port, LP_LE_Pin);
@@ -169,6 +170,7 @@ int main(void)
 	GPIOB->BSRR = (str_cnt << 12u) | ((0x7-str_cnt) << (12u+16u));
 
   }
+  */
 	/*
 	LL_GPIO_SetOutputPin(LED_LE_GPIO_Port, LED_LE_Pin);
 	LL_GPIO_ResetOutputPin(LED_LE_GPIO_Port, LED_LE_Pin);
@@ -418,7 +420,16 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void cpToLPBuffer(void){
+  //update LP buffer
+  //nthStr - 2*16 + (nth+8)Str - 2*16
+  	for (uint8_t i=0;i<8;i++){
+	LP_buffer [4*i] = display_buffer[i+8][0];
+	LP_buffer [4*i+1] = display_buffer[i+8][1];
+	LP_buffer [4*i+2] = display_buffer[i][0];
+	LP_buffer [4*i+3] = display_buffer[i][1];
+  };
+};
 /* USER CODE END 4 */
 
 /**
