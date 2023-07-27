@@ -15,7 +15,7 @@
 //
 
 // Character bitmaps for Consolas 8pt
-const uint_8 consolas_8ptBitmaps[] =
+const uint_8 font_8ptBtmps[] =
 {
 	// @0 ',' (3 pixels wide)
 	0x00, //
@@ -150,7 +150,7 @@ const uint_8 consolas_8ptBitmaps[] =
 
 // Character descriptors for Consolas 8pt
 // { [Char width in bits], [Offset into consolas_8ptCharBitmaps in bytes] }
-const FONT_CHAR_INFO consolas_8ptDescriptors[] =
+const FONT_CHAR_INFO font_8ptChrsDescr[] =
 {
 	{3, 0}, 		// ,
 	{0, 0}, 		// -
@@ -170,13 +170,13 @@ const FONT_CHAR_INFO consolas_8ptDescriptors[] =
 };
 
 // Font information for Consolas 8pt
-const FONT_INFO consolas_8ptFontInfo =
+const FONT_INFO font_8pt_info =
 {
 	1, //  Character height
 	',', //  Start character
 	':', //  End character
 	2, //  Width, in pixels, of space character
-	{consolas_8ptDescriptors[14]}, //  Character descriptor array
-	{consolas_8ptBitmaps[100]}, //  Character bitmap array
+	{font_8ptChrsDescr[4]}, //  Character descriptor array
+	{font_8ptBtmps[100]}, //  Character bitmap array
 };
 

@@ -44,10 +44,10 @@
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h:832:22:LL_GPIO_ResetOutputPin	1
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h:861:22:LL_GPIO_TogglePin	1
 ../Core/Src/main.c:96:5:main	1
-../Core/Src/main.c:207:6:SystemClock_Config	6
-../Core/Src/main.c:253:13:MX_SPI1_Init	1
-../Core/Src/main.c:321:13:MX_TIM3_Init	1
-../Core/Src/main.c:378:13:MX_DMA_Init	1
-../Core/Src/main.c:397:13:MX_GPIO_Init	1
-../Core/Src/main.c:425:6:cpToLPBuffer	2
-../Core/Src/main.c:441:6:Error_Handler	1
+../Core/Src/main.c:214:6:SystemClock_Config	6
+../Core/Src/main.c:260:13:MX_SPI1_Init	1
+../Core/Src/main.c:328:13:MX_TIM3_Init	1
+../Core/Src/main.c:385:13:MX_DMA_Init	1
+../Core/Src/main.c:404:13:MX_GPIO_Init	1
+../Core/Src/main.c:432:6:cpToLPBuffer	2
+../Core/Src/main.c:448:6:Error_Handler	1

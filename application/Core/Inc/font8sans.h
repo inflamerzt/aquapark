@@ -14,10 +14,15 @@
 #define uint_8 uint8_t
 
 // Font data for Consolas 8pt
-extern const uint_8 consolas_8ptBitmaps[];
-extern const FONT_INFO consolas_8ptFontInfo;
-extern const FONT_CHAR_INFO consolas_8ptDescriptors[];
+extern const uint_8 font_8ptBtmps[];
+extern const FONT_INFO font_8pt_info;
+extern const FONT_CHAR_INFO font_8ptChrsDescr[];
 
+
+#define symb_8s_pos(ch) font_8pt_info.descr_arr[font_8pt_info.stchar -ch].position;
+#define symb_8s_siz(ch) font_8pt_info.descr_arr[font_8pt_info.stchar -ch].size;
+#define fnt_8s_hght = font_8pt_info.height;
+#define sp_8s_wdth = font_8pt_info.sp_width;
 
 
 #endif /* INC_FONT8SANS_H_ */

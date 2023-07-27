@@ -23,7 +23,7 @@ typedef struct
 uint8_t height;
 char stchar;
 char endchar;
-uint8_t width;
+uint8_t sp_width;
 FONT_CHAR_INFO descr_arr[15];
 uint8_t	bitmap_arr[];
 }FONT_INFO;
