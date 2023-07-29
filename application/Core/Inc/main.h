@@ -49,7 +49,12 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+typedef struct {
+	uint8_t c3;
+	uint8_t c2;
+	uint8_t c1;
+	uint8_t c0;
+}dcount_t;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/

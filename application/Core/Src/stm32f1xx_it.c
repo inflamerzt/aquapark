@@ -44,6 +44,8 @@
 extern uint8_t str_cnt;
 extern uint8_t LP_lock;
 extern uint16_t LP_buffer[32];
+extern dcount_t cnt1;
+extern uint8_t cntupd;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -282,7 +284,17 @@ void TIM3_IRQHandler(void)
 void TIM6_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM6_IRQn 0 */
+	if(LL_TIM_IsActiveFlag_UPDATE(TIM6)){
+		LL_TIM_ClearFlag_UPDATE(TIM6);
+		LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+		cnt1.c0++;
+		if (cnt1.c0 > 9){cnt1.c0 = 0; cnt1.c1++;}
+		if (cnt1.c1 > 9){cnt1.c1 = 0; cnt1.c2++;}
+		if (cnt1.c2 > 9){cnt1.c2 = 0; cnt1.c3++;}
+		if (cnt1.c3 > 9){cnt1.c3 = 0;}
+		cntupd++;
 
+	}
   /* USER CODE END TIM6_IRQn 0 */
   /* USER CODE BEGIN TIM6_IRQn 1 */
 

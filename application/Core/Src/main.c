@@ -45,7 +45,9 @@
 
 /* USER CODE BEGIN PV */
 
-
+dcount_t cnt1;
+uint8_t cntupd = 0;
+char str[] = "00.00";
 
 typedef struct type21{ uint8_t x; uint8_t y;}type21;
 
@@ -94,6 +96,7 @@ static void MX_TIM6_Init(void);
 static void MX_RTC_Init(void);
 /* USER CODE BEGIN PFP */
 void cpToLPBuffer(void);
+void putStrToBuff(char *str);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -117,8 +120,9 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  //LL_DBGMCU_EnableDBGSleepMode();
-  //LL_DBGMCU_APB1_GRP1_FreezePeriph(LL_DBGMCU_APB1_GRP1_TIM3_STOP | LL_DBGMCU_APB1_GRP1_TIM4_STOP);
+  LL_DBGMCU_EnableDBGSleepMode();
+  LL_DBGMCU_APB1_GRP1_FreezePeriph(LL_DBGMCU_APB1_GRP1_TIM3_STOP | LL_DBGMCU_APB1_GRP1_TIM4_STOP);
+  LL_DBGMCU_APB1_GRP1_FreezePeriph(LL_DBGMCU_APB1_GRP1_TIM6_STOP);
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -145,6 +149,10 @@ int main(void)
   LL_TIM_EnableIT_UPDATE(TIM3);
   LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH4);
   LL_TIM_OC_SetCompareCH4(TIM3, 29000);//170 - 15001);
+
+  LL_TIM_EnableCounter(TIM6);
+
+  LL_TIM_EnableIT_UPDATE(TIM6);
 
 	cpToLPBuffer();
 	/*
@@ -188,53 +196,146 @@ int main(void)
   test = font_8pt_info.height;
   test = font_8ptBtmps[6];
 
-
-  uint8_t rpos = '9'-font_8pt_info.stchar;
+/*
+  uint8_t rpos = '1'-font_8pt_info.stchar;
   uint8_t bpos = font_8ptChrsDescr[rpos].position;
   uint8_t chw = font_8ptChrsDescr[rpos].size;
-  uint8_t rpos1 = ':'-font_8pt_info.stchar;
+  uint8_t rpos1 = '0'-font_8pt_info.stchar;
   uint8_t bpos1 = font_8ptChrsDescr[rpos1].position;
+*/
+/*
+#define bmpaddr(c)  font_8ptChrsDescr[c - font_8pt_info.stchar].position;
+
+  bpos = bmpaddr('1');
+*/
 
 
-		  for (uint8_t i=0;i<8;i++){
-			  display_buffer[i][0] = (font_8ptBtmps[bpos+i]<<8) | (font_8ptBtmps[bpos1+i]<<(8-2-chw));
+  test = strlen(str);
+
+  uint8_t width;
+   uint8_t tmp;
+/*
+  for (char* s=&str[0]; *s != '\0'; s++ )
+  {
+      //printf("%c\n", *s);
+	  rpos = *s - font_8pt_info.stchar;
+	  width = font_8ptChrsDescr[rpos].size;
+	  bpos = font_8ptChrsDescr[rpos].position;
+	  tmp = font_8ptBtmps[bpos];
+
+  };
+*/
+
+
+
+   //strcpy(str,str_templ);
+
+   putStrToBuff(&str[0]);
+/*
+   char *s;
+
+  //str[4] = '0' + 5;
+
+
+  uint8_t rpos, bpos, st_pos;
+
+  for (uint8_t i=0;i<8;i++){
+	  s=&str[0];
+	  st_pos = 32;
+  uint32_t tmp = 0;
+  while (*s != '\0'){
+	  rpos = *s - font_8pt_info.stchar;
+	  width = font_8ptChrsDescr[rpos].size;
+	  bpos = font_8ptChrsDescr[rpos].position;
+	  st_pos -= width;
+	  tmp |= font_8ptBtmps[bpos + i] << st_pos;
+	  st_pos--;
+
+	  s++;
+
+  };
+
+  display_buffer[i][0] = (tmp >> 16);
+  display_buffer[i][1] = (tmp);
+
+  };
+
+  */
+	/*	  for (uint8_t i=0;i<8;i++){
+			  uint32_t temp;
+			  st_pos = 32;
+			  st_pos -= chw;
+			  temp = ((font_8ptBtmps[bpos+i]) << (st_pos));
+
+			  st_pos -= chw + 1;
+			  temp |= (font_8ptBtmps[bpos1+i] << (st_pos));
+
+			  st_pos -= chw + 1;
+			  temp |= (font_8ptBtmps[bpos+i] << (st_pos));
+
+			  st_pos -= chw + 1;
+			  temp |= (font_8ptBtmps[bpos1+i] << (st_pos));
+
+			  st_pos -= chw + 1;
+			  temp |= (font_8ptBtmps[bpos+i] << (st_pos));
+
+			  display_buffer[i][0] = (temp >> 16);
+			  display_buffer[i][1] = (temp);
 		  }
+*/
+		  __NOP();
+		  uint32_t testop1 = 10;
+		  uint32_t testop2 = 2;
+		  uint32_t result;
+		  asm("nop");
+		  result = __ROR(testop1, testop2);
+//  return (op1 >> op2) | (op1 << (32U - op2));
+		  result = (testop1 >> testop2) | (testop1 << (32U -testop2));
+		  result = __RBIT(result);
+		  uint32_t value = result;
+    __ASM volatile ("rbit %0, %1" : "=r" (result) : "r" (value) );
+
+    __ASM volatile ("ror.w %0, %1" : "=r" (result) : "r" (testop2));
+
+    	//display
+
   cpToLPBuffer();
 
+  /*
+   * fit in 16bit register
+   */
+
+  	  uint8_t positions;
+  	  uint8_t chars;
+
+  	  /*
+  	   * cpos + chw < 16
+  	   * yes:
+  	   *  put char cpos += chw
+  	   * no:
+  	   * cpos = chw +  16 - cpos (partially put in fist bit)
+  	   *  put part of sym in register
+  	   * calculate size of part in next register
+  	   *
+  	   * go to yes:
+  	   *
+  	   * max width = 6 * 5 symols = 30 bits
+  	   *
+  	   *
+  	   *
+  	   * don't convert hex to dec, count in dec
+  	   */
 
 
 
 
-
-  //pos = font_8pt_info.descr_arr[('0' - font_8pt_info.stchar)].position;
-
-//  display_buffer[0][0] = font_8ptBtmps[0];
-
-  //LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_3);
 /*
-  __WFI();
-  while(LL_SPI_IsActiveFlag_BSY(SPI1));
-  LL_GPIO_SetOutputPin(LP_LE_GPIO_Port, LP_LE_Pin);
-  asm("nop");
-
-  LL_GPIO_ResetOutputPin(LP_LE_GPIO_Port, LP_LE_Pin);
-
-
 
   for (uint8_t str_cnt = 0;str_cnt < 8; str_cnt++){
 
 	GPIOB->BSRR = (str_cnt << 12u) | ((0x7-str_cnt) << (12u+16u));
 
   }
-  */
-	/*
-	LL_GPIO_SetOutputPin(LED_LE_GPIO_Port, LED_LE_Pin);
-	LL_GPIO_ResetOutputPin(LED_LE_GPIO_Port, LED_LE_Pin);
-*/
-	/*
-	str_cnt++;
-
-	if (str_cnt >= 8) {str_cnt=0;};
   */
 
   /* USER CODE END 2 */
@@ -246,6 +347,18 @@ int main(void)
 	  __WFI();
 	  __NOP();
 	  __NOP();
+
+	  if (cntupd) {
+	  str[0] = '0' + cnt1.c3;
+	  str[1] = '0' + cnt1.c2;
+	  str[3] = '0' + cnt1.c1;
+	  str[4] = '0' + cnt1.c0;
+
+	  putStrToBuff(str);
+	  cpToLPBuffer();
+	  cntupd = 0;
+	  };
+
 
     /* USER CODE END WHILE */
 
@@ -500,7 +613,7 @@ static void MX_TIM6_Init(void)
   /* USER CODE BEGIN TIM6_Init 1 */
 
   /* USER CODE END TIM6_Init 1 */
-  TIM_InitStruct.Prescaler = 1;
+  TIM_InitStruct.Prescaler = 20;
   TIM_InitStruct.CounterMode = LL_TIM_COUNTERMODE_UP;
   TIM_InitStruct.Autoreload = 36000;
   LL_TIM_Init(TIM6, &TIM_InitStruct);
@@ -573,6 +686,34 @@ void cpToLPBuffer(void){
 	LP_buffer [4*i+3] = display_buffer[i][1];
   };
 };
+
+void putStrToBuff(char *string){
+		char *s ;
+	  uint8_t rpos, bpos, st_pos, w;
+	  for (uint8_t i=0;i<8;i++){
+		  s=string;
+		  st_pos = 32;
+	  uint32_t tmp = 0;
+	  while (*s != '\0'){
+		  rpos = *s - font_8pt_info.stchar;
+		  w = font_8ptChrsDescr[rpos].size;
+		  bpos = font_8ptChrsDescr[rpos].position;
+		  st_pos -= w;
+		  tmp |= font_8ptBtmps[bpos + i] << st_pos;
+		  st_pos--;
+
+		  s++;
+
+	  };
+
+	  display_buffer[i][0] = (tmp >> 16);
+	  display_buffer[i][1] = (tmp);
+
+	  };
+
+
+}
+
 /* USER CODE END 4 */
 
 /**
