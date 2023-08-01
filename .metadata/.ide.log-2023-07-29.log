@@ -1,0 +1,605 @@
+2023-07-29 21:54:29,264 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2023-07-29 21:54:32,997 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 6920mS.
+2023-07-29 21:54:33,000 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-07-29 21:54:33,025 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-07-29 21:59:56,981 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-07-29 22:00:00,423 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 709930384 Bytes (931135488)
+2023-07-29 22:00:03,016 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 738684296 Bytes (931135488)
+2023-07-29 22:00:07,072 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 780062040 Bytes (931135488)
+2023-07-29 22:00:07,675 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-07-29 22:00:07,675 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-07-29 22:00:07,675 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-07-29 22:00:07,675 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-07-29 22:00:07,675 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F1
+2023-07-29 22:00:07,676 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-07-29 22:00:07,676 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_DEVICE
+2023-07-29 22:00:07,676 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB
+2023-07-29 22:00:07,676 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-07-29 22:00:07,676 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-07-29 22:00:07,677 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-07-29 22:00:07,678 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.0.202307051724\\db\
+2023-07-29 22:00:07,698 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,699 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,699 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,699 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,699 [INFO] Argument:319 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-07-29 22:00:07,699 [INFO] Argument:329 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-07-29 22:00:07,699 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,699 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,700 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,700 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,700 [INFO] Argument:319 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-07-29 22:00:07,700 [INFO] Argument:329 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-07-29 22:00:07,700 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,700 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,700 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,700 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,700 [INFO] Argument:319 - Argument : Modevalue: LL_DMA_MODE_NORMAL
+2023-07-29 22:00:07,700 [INFO] Argument:329 - Argument : Modevalue: LL_DMA_MODE_NORMAL
+2023-07-29 22:00:07,701 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,701 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,701 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,701 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,701 [INFO] Argument:319 - Argument : PeriphOrM2MSrcIncModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-07-29 22:00:07,701 [INFO] Argument:329 - Argument : PeriphOrM2MSrcIncModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-07-29 22:00:07,701 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,701 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,701 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,702 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,702 [INFO] Argument:319 - Argument : MemoryOrM2MDstIncModevalue: LL_DMA_MEMORY_INCREMENT
+2023-07-29 22:00:07,702 [INFO] Argument:329 - Argument : MemoryOrM2MDstIncModevalue: LL_DMA_MEMORY_INCREMENT
+2023-07-29 22:00:07,702 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,702 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,702 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,702 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,702 [INFO] Argument:319 - Argument : PeriphOrM2MSrcDataSizevalue: LL_DMA_PDATAALIGN_HALFWORD
+2023-07-29 22:00:07,702 [INFO] Argument:329 - Argument : PeriphOrM2MSrcDataSizevalue: LL_DMA_PDATAALIGN_HALFWORD
+2023-07-29 22:00:07,702 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,703 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:00:07,703 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,703 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:00:07,703 [INFO] Argument:319 - Argument : MemoryOrM2MDstDataSizevalue: LL_DMA_MDATAALIGN_HALFWORD
+2023-07-29 22:00:07,703 [INFO] Argument:329 - Argument : MemoryOrM2MDstDataSizevalue: LL_DMA_MDATAALIGN_HALFWORD
+2023-07-29 22:00:08,002 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\license.tmp_save
+2023-07-29 22:00:08,284 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\license.tmp
+2023-07-29 22:00:08,417 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\gpio.tmp_save
+2023-07-29 22:00:08,571 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\gpio.tmp
+2023-07-29 22:00:08,718 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_vars.tmp_save
+2023-07-29 22:00:08,865 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_vars.tmp
+2023-07-29 22:00:08,872 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_inc.tmp_save
+2023-07-29 22:00:08,988 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_inc.tmp
+2023-07-29 22:00:09,003 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_HalInit.tmp_save
+2023-07-29 22:00:09,150 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_HalInit.tmp
+2023-07-29 22:00:09,166 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_Msp.tmp_save
+2023-07-29 22:00:09,320 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_Msp.tmp
+2023-07-29 22:00:09,886 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-07-29 22:00:09,935 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma.tmp_save
+2023-07-29 22:00:10,063 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma.tmp
+2023-07-29 22:00:10,073 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma_GV.tmp_save
+2023-07-29 22:00:10,449 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma_GV.tmp
+2023-07-29 22:00:10,463 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-07-29 22:00:10,485 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.c_save
+2023-07-29 22:00:10,625 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.c
+2023-07-29 22:00:10,637 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.h_save
+2023-07-29 22:00:10,766 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.h
+2023-07-29 22:00:10,778 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.h_save
+2023-07-29 22:00:10,907 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.h
+2023-07-29 22:00:10,929 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.c_save
+2023-07-29 22:00:11,081 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.c
+2023-07-29 22:00:11,099 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.h_save
+2023-07-29 22:00:11,231 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.h
+2023-07-29 22:00:11,243 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.c_save
+2023-07-29 22:00:11,395 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.c
+2023-07-29 22:00:11,413 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.h_save
+2023-07-29 22:00:11,558 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.h
+2023-07-29 22:00:11,577 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.c_save
+2023-07-29 22:00:11,722 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.c
+2023-07-29 22:00:11,754 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_it.c_save
+2023-07-29 22:00:11,941 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_it.c
+2023-07-29 22:00:11,956 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_it.h_save
+2023-07-29 22:00:12,090 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_it.h
+2023-07-29 22:00:12,126 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_hal_msp.c_save
+2023-07-29 22:00:12,301 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_hal_msp.c
+2023-07-29 22:00:12,311 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\system.tmp_save
+2023-07-29 22:00:12,427 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\system.tmp
+2023-07-29 22:00:12,439 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32_assert.h_save
+2023-07-29 22:00:12,558 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32_assert.h
+2023-07-29 22:00:12,584 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-07-29 22:00:12,722 [INFO] CodeEngine:335 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_hal_conf.h
+2023-07-29 22:00:12,754 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-07-29 22:00:12,754 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_MCOConfig is not available in your config.xml file
+2023-07-29 22:00:12,754 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-07-29 22:00:12,754 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-07-29 22:00:12,773 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-07-29 22:00:12,775 [WARN] CodeGenerator:3760 - IP not found : null
+2023-07-29 22:00:12,797 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\main.h_save
+2023-07-29 22:00:12,935 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\main.h
+2023-07-29 22:00:12,951 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\main.c_save
+2023-07-29 22:00:13,215 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\main.c
+2023-07-29 22:00:14,465 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 457mS.
+2023-07-29 22:00:14,496 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-07-29 22:00:14,866 [INFO] ConfigFileManager:1457 - The Die is : DIE414
+2023-07-29 22:00:19,245 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 4749mS.
+2023-07-29 22:00:19,247 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-07-29 22:00:19,287 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-07-29 22:11:38,507 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-07-29 22:11:41,322 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 382289664 Bytes (1073741824)
+2023-07-29 22:11:44,051 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 314824584 Bytes (1073741824)
+2023-07-29 22:11:47,194 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 397135752 Bytes (1073741824)
+2023-07-29 22:11:47,726 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-07-29 22:11:47,726 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-07-29 22:11:47,727 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-07-29 22:11:47,727 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-07-29 22:11:47,727 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F1
+2023-07-29 22:11:47,727 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-07-29 22:11:47,727 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_DEVICE
+2023-07-29 22:11:47,727 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB
+2023-07-29 22:11:47,727 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-07-29 22:11:47,728 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-07-29 22:11:47,728 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-07-29 22:11:47,730 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.0.202307051724\\db\
+2023-07-29 22:11:47,747 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,747 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,747 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,747 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,748 [INFO] Argument:319 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-07-29 22:11:47,748 [INFO] Argument:329 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-07-29 22:11:47,748 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,748 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,748 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,748 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,748 [INFO] Argument:319 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-07-29 22:11:47,748 [INFO] Argument:329 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-07-29 22:11:47,748 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,748 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,748 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,749 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,749 [INFO] Argument:319 - Argument : Modevalue: LL_DMA_MODE_NORMAL
+2023-07-29 22:11:47,749 [INFO] Argument:329 - Argument : Modevalue: LL_DMA_MODE_NORMAL
+2023-07-29 22:11:47,749 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,749 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,749 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,749 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,749 [INFO] Argument:319 - Argument : PeriphOrM2MSrcIncModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-07-29 22:11:47,750 [INFO] Argument:329 - Argument : PeriphOrM2MSrcIncModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-07-29 22:11:47,750 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,750 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,750 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,750 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,750 [INFO] Argument:319 - Argument : MemoryOrM2MDstIncModevalue: LL_DMA_MEMORY_INCREMENT
+2023-07-29 22:11:47,750 [INFO] Argument:329 - Argument : MemoryOrM2MDstIncModevalue: LL_DMA_MEMORY_INCREMENT
+2023-07-29 22:11:47,750 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,750 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,750 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,750 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,751 [INFO] Argument:319 - Argument : PeriphOrM2MSrcDataSizevalue: LL_DMA_PDATAALIGN_HALFWORD
+2023-07-29 22:11:47,751 [INFO] Argument:329 - Argument : PeriphOrM2MSrcDataSizevalue: LL_DMA_PDATAALIGN_HALFWORD
+2023-07-29 22:11:47,751 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,751 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 22:11:47,751 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,751 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 22:11:47,751 [INFO] Argument:319 - Argument : MemoryOrM2MDstDataSizevalue: LL_DMA_MDATAALIGN_HALFWORD
+2023-07-29 22:11:47,751 [INFO] Argument:329 - Argument : MemoryOrM2MDstDataSizevalue: LL_DMA_MDATAALIGN_HALFWORD
+2023-07-29 22:11:48,040 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\license.tmp_save
+2023-07-29 22:11:48,212 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\license.tmp
+2023-07-29 22:11:48,299 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\gpio.tmp_save
+2023-07-29 22:11:48,441 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\gpio.tmp
+2023-07-29 22:11:48,573 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_vars.tmp_save
+2023-07-29 22:11:48,692 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_vars.tmp
+2023-07-29 22:11:48,704 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_inc.tmp_save
+2023-07-29 22:11:48,825 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_inc.tmp
+2023-07-29 22:11:48,833 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_HalInit.tmp_save
+2023-07-29 22:11:48,966 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_HalInit.tmp
+2023-07-29 22:11:48,976 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_Msp.tmp_save
+2023-07-29 22:11:49,118 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_Msp.tmp
+2023-07-29 22:11:49,620 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-07-29 22:11:49,667 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma.tmp_save
+2023-07-29 22:11:49,792 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma.tmp
+2023-07-29 22:11:49,802 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma_GV.tmp_save
+2023-07-29 22:11:49,919 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma_GV.tmp
+2023-07-29 22:11:49,941 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-07-29 22:11:49,965 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.c_save
+2023-07-29 22:11:50,105 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.c
+2023-07-29 22:11:50,119 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.h_save
+2023-07-29 22:11:50,253 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.h
+2023-07-29 22:11:50,267 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.h_save
+2023-07-29 22:11:50,504 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.h
+2023-07-29 22:11:50,519 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.c_save
+2023-07-29 22:11:50,745 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.c
+2023-07-29 22:11:50,758 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.h_save
+2023-07-29 22:11:50,885 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.h
+2023-07-29 22:11:50,899 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.c_save
+2023-07-29 22:11:51,036 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.c
+2023-07-29 22:11:51,048 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.h_save
+2023-07-29 22:11:51,171 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.h
+2023-07-29 22:11:51,184 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.c_save
+2023-07-29 22:11:51,310 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.c
+2023-07-29 22:11:51,339 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_it.c_save
+2023-07-29 22:11:51,506 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_it.c
+2023-07-29 22:11:51,519 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_it.h_save
+2023-07-29 22:11:51,639 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_it.h
+2023-07-29 22:11:51,667 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_hal_msp.c_save
+2023-07-29 22:11:51,827 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_hal_msp.c
+2023-07-29 22:11:51,835 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\system.tmp_save
+2023-07-29 22:11:51,946 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\system.tmp
+2023-07-29 22:11:51,957 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32_assert.h_save
+2023-07-29 22:11:52,072 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32_assert.h
+2023-07-29 22:11:52,096 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-07-29 22:11:52,227 [INFO] CodeEngine:335 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_hal_conf.h
+2023-07-29 22:11:52,253 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-07-29 22:11:52,254 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_MCOConfig is not available in your config.xml file
+2023-07-29 22:11:52,254 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-07-29 22:11:52,254 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-07-29 22:11:52,268 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-07-29 22:11:52,270 [WARN] CodeGenerator:3760 - IP not found : null
+2023-07-29 22:11:52,291 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\main.h_save
+2023-07-29 22:11:52,417 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\main.h
+2023-07-29 22:11:52,437 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\main.c_save
+2023-07-29 22:11:52,666 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\main.c
+2023-07-29 22:11:53,995 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 525mS.
+2023-07-29 22:11:54,011 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-07-29 22:11:54,387 [INFO] ConfigFileManager:1457 - The Die is : DIE414
+2023-07-29 22:11:58,158 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 4146mS.
+2023-07-29 22:11:58,160 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-07-29 22:11:58,176 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-07-29 23:27:27,778 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-07-29 23:27:32,876 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-07-29 23:27:35,626 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 767003080 Bytes (940572672)
+2023-07-29 23:27:38,329 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 801723760 Bytes (940572672)
+2023-07-29 23:27:42,107 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 314581960 Bytes (940572672)
+2023-07-29 23:27:42,635 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-07-29 23:27:42,635 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-07-29 23:27:42,635 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-07-29 23:27:42,635 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-07-29 23:27:42,635 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F1
+2023-07-29 23:27:42,636 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-07-29 23:27:42,638 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_DEVICE
+2023-07-29 23:27:42,648 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB
+2023-07-29 23:27:42,648 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-07-29 23:27:42,649 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-07-29 23:27:42,649 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-07-29 23:27:42,651 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.0.202307051724\\db\
+2023-07-29 23:27:42,667 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,667 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,667 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,667 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,667 [INFO] Argument:319 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-07-29 23:27:42,668 [INFO] Argument:329 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-07-29 23:27:42,668 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,668 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,668 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,668 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,668 [INFO] Argument:319 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-07-29 23:27:42,668 [INFO] Argument:329 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-07-29 23:27:42,668 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,668 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,668 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,668 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,668 [INFO] Argument:319 - Argument : Modevalue: LL_DMA_MODE_NORMAL
+2023-07-29 23:27:42,668 [INFO] Argument:329 - Argument : Modevalue: LL_DMA_MODE_NORMAL
+2023-07-29 23:27:42,669 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,669 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,669 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,669 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,669 [INFO] Argument:319 - Argument : PeriphOrM2MSrcIncModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-07-29 23:27:42,669 [INFO] Argument:329 - Argument : PeriphOrM2MSrcIncModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-07-29 23:27:42,669 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,669 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,669 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,669 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,669 [INFO] Argument:319 - Argument : MemoryOrM2MDstIncModevalue: LL_DMA_MEMORY_INCREMENT
+2023-07-29 23:27:42,669 [INFO] Argument:329 - Argument : MemoryOrM2MDstIncModevalue: LL_DMA_MEMORY_INCREMENT
+2023-07-29 23:27:42,670 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,670 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,670 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,670 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,670 [INFO] Argument:319 - Argument : PeriphOrM2MSrcDataSizevalue: LL_DMA_PDATAALIGN_HALFWORD
+2023-07-29 23:27:42,670 [INFO] Argument:329 - Argument : PeriphOrM2MSrcDataSizevalue: LL_DMA_PDATAALIGN_HALFWORD
+2023-07-29 23:27:42,670 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,670 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:27:42,670 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,670 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:27:42,670 [INFO] Argument:319 - Argument : MemoryOrM2MDstDataSizevalue: LL_DMA_MDATAALIGN_HALFWORD
+2023-07-29 23:27:42,670 [INFO] Argument:329 - Argument : MemoryOrM2MDstDataSizevalue: LL_DMA_MDATAALIGN_HALFWORD
+2023-07-29 23:27:42,971 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\license.tmp_save
+2023-07-29 23:27:43,246 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\license.tmp
+2023-07-29 23:27:43,331 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\gpio.tmp_save
+2023-07-29 23:27:43,469 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\gpio.tmp
+2023-07-29 23:27:43,576 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_vars.tmp_save
+2023-07-29 23:27:43,714 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_vars.tmp
+2023-07-29 23:27:43,723 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_inc.tmp_save
+2023-07-29 23:27:43,838 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_inc.tmp
+2023-07-29 23:27:43,846 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_HalInit.tmp_save
+2023-07-29 23:27:43,987 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_HalInit.tmp
+2023-07-29 23:27:43,996 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_Msp.tmp_save
+2023-07-29 23:27:44,139 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_Msp.tmp
+2023-07-29 23:27:44,777 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-07-29 23:27:44,838 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma.tmp_save
+2023-07-29 23:27:44,967 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma.tmp
+2023-07-29 23:27:44,977 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma_GV.tmp_save
+2023-07-29 23:27:45,077 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma_GV.tmp
+2023-07-29 23:27:45,093 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-07-29 23:27:45,108 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.c_save
+2023-07-29 23:27:45,253 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.c
+2023-07-29 23:27:45,278 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.h_save
+2023-07-29 23:27:45,409 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.h
+2023-07-29 23:27:45,409 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.h_save
+2023-07-29 23:27:45,547 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.h
+2023-07-29 23:27:45,562 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.c_save
+2023-07-29 23:27:45,702 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.c
+2023-07-29 23:27:45,715 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.h_save
+2023-07-29 23:27:45,834 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.h
+2023-07-29 23:27:45,848 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.c_save
+2023-07-29 23:27:45,980 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.c
+2023-07-29 23:27:45,992 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.h_save
+2023-07-29 23:27:46,111 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.h
+2023-07-29 23:27:46,124 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.c_save
+2023-07-29 23:27:46,247 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.c
+2023-07-29 23:27:46,275 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_it.c_save
+2023-07-29 23:27:46,593 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_it.c
+2023-07-29 23:27:46,606 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_it.h_save
+2023-07-29 23:27:46,730 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_it.h
+2023-07-29 23:27:46,760 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_hal_msp.c_save
+2023-07-29 23:27:46,925 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_hal_msp.c
+2023-07-29 23:27:46,934 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\system.tmp_save
+2023-07-29 23:27:47,050 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\system.tmp
+2023-07-29 23:27:47,061 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32_assert.h_save
+2023-07-29 23:27:47,181 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32_assert.h
+2023-07-29 23:27:47,205 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-07-29 23:27:47,338 [INFO] CodeEngine:335 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_hal_conf.h
+2023-07-29 23:27:47,363 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-07-29 23:27:47,364 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_MCOConfig is not available in your config.xml file
+2023-07-29 23:27:47,364 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-07-29 23:27:47,364 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-07-29 23:27:47,379 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-07-29 23:27:47,381 [WARN] CodeGenerator:3760 - IP not found : null
+2023-07-29 23:27:47,403 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\main.h_save
+2023-07-29 23:27:47,557 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\main.h
+2023-07-29 23:27:47,573 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\main.c_save
+2023-07-29 23:27:47,805 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\main.c
+2023-07-29 23:27:49,025 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 457mS.
+2023-07-29 23:27:49,041 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-07-29 23:27:49,412 [INFO] ConfigFileManager:1457 - The Die is : DIE414
+2023-07-29 23:27:52,479 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3437mS.
+2023-07-29 23:27:52,481 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 2mS.
+2023-07-29 23:27:52,496 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-07-29 23:28:43,044 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-07-29 23:28:47,258 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 556525040 Bytes (1060110336)
+2023-07-29 23:28:50,300 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 584836592 Bytes (1060110336)
+2023-07-29 23:28:54,184 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 667356904 Bytes (1060110336)
+2023-07-29 23:28:54,765 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-07-29 23:28:54,765 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-07-29 23:28:54,765 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-07-29 23:28:54,765 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-07-29 23:28:54,765 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F1
+2023-07-29 23:28:54,765 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-07-29 23:28:54,765 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_DEVICE
+2023-07-29 23:28:54,765 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB
+2023-07-29 23:28:54,765 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-07-29 23:28:54,766 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-07-29 23:28:54,766 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-07-29 23:28:54,768 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.0.202307051724\\db\
+2023-07-29 23:28:54,783 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,783 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,783 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,784 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,784 [INFO] Argument:319 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-07-29 23:28:54,784 [INFO] Argument:329 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-07-29 23:28:54,784 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,784 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,784 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,784 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,784 [INFO] Argument:319 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-07-29 23:28:54,784 [INFO] Argument:329 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-07-29 23:28:54,784 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,784 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,785 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,785 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,785 [INFO] Argument:319 - Argument : Modevalue: LL_DMA_MODE_NORMAL
+2023-07-29 23:28:54,785 [INFO] Argument:329 - Argument : Modevalue: LL_DMA_MODE_NORMAL
+2023-07-29 23:28:54,785 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,785 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,785 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,785 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,785 [INFO] Argument:319 - Argument : PeriphOrM2MSrcIncModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-07-29 23:28:54,785 [INFO] Argument:329 - Argument : PeriphOrM2MSrcIncModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-07-29 23:28:54,785 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,785 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,785 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,786 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,786 [INFO] Argument:319 - Argument : MemoryOrM2MDstIncModevalue: LL_DMA_MEMORY_INCREMENT
+2023-07-29 23:28:54,786 [INFO] Argument:329 - Argument : MemoryOrM2MDstIncModevalue: LL_DMA_MEMORY_INCREMENT
+2023-07-29 23:28:54,786 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,786 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,786 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,786 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,786 [INFO] Argument:319 - Argument : PeriphOrM2MSrcDataSizevalue: LL_DMA_PDATAALIGN_HALFWORD
+2023-07-29 23:28:54,786 [INFO] Argument:329 - Argument : PeriphOrM2MSrcDataSizevalue: LL_DMA_PDATAALIGN_HALFWORD
+2023-07-29 23:28:54,786 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,786 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:28:54,786 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,787 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:28:54,787 [INFO] Argument:319 - Argument : MemoryOrM2MDstDataSizevalue: LL_DMA_MDATAALIGN_HALFWORD
+2023-07-29 23:28:54,787 [INFO] Argument:329 - Argument : MemoryOrM2MDstDataSizevalue: LL_DMA_MDATAALIGN_HALFWORD
+2023-07-29 23:28:55,070 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\license.tmp_save
+2023-07-29 23:28:55,194 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\license.tmp
+2023-07-29 23:28:55,278 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\gpio.tmp_save
+2023-07-29 23:28:55,440 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\gpio.tmp
+2023-07-29 23:28:55,547 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_vars.tmp_save
+2023-07-29 23:28:55,660 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_vars.tmp
+2023-07-29 23:28:55,668 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_inc.tmp_save
+2023-07-29 23:28:55,779 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_inc.tmp
+2023-07-29 23:28:55,787 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_HalInit.tmp_save
+2023-07-29 23:28:55,916 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_HalInit.tmp
+2023-07-29 23:28:55,924 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_Msp.tmp_save
+2023-07-29 23:28:56,064 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_Msp.tmp
+2023-07-29 23:28:56,670 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-07-29 23:28:56,714 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma.tmp_save
+2023-07-29 23:28:56,841 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma.tmp
+2023-07-29 23:28:56,849 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma_GV.tmp_save
+2023-07-29 23:28:56,961 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma_GV.tmp
+2023-07-29 23:28:56,979 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-07-29 23:28:56,998 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.c_save
+2023-07-29 23:28:57,134 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.c
+2023-07-29 23:28:57,147 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.h_save
+2023-07-29 23:28:57,272 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.h
+2023-07-29 23:28:57,284 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.h_save
+2023-07-29 23:28:57,410 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.h
+2023-07-29 23:28:57,424 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.c_save
+2023-07-29 23:28:57,566 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.c
+2023-07-29 23:28:57,578 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.h_save
+2023-07-29 23:28:57,697 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.h
+2023-07-29 23:28:57,710 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.c_save
+2023-07-29 23:28:57,844 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.c
+2023-07-29 23:28:57,856 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.h_save
+2023-07-29 23:28:57,974 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.h
+2023-07-29 23:28:57,986 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.c_save
+2023-07-29 23:28:58,111 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.c
+2023-07-29 23:28:58,139 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_it.c_save
+2023-07-29 23:28:58,298 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_it.c
+2023-07-29 23:28:58,311 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_it.h_save
+2023-07-29 23:28:58,430 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_it.h
+2023-07-29 23:28:58,455 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_hal_msp.c_save
+2023-07-29 23:28:58,605 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_hal_msp.c
+2023-07-29 23:28:58,620 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\system.tmp_save
+2023-07-29 23:28:58,720 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\system.tmp
+2023-07-29 23:28:58,736 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32_assert.h_save
+2023-07-29 23:28:58,852 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32_assert.h
+2023-07-29 23:28:58,868 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-07-29 23:28:58,999 [INFO] CodeEngine:335 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_hal_conf.h
+2023-07-29 23:28:59,021 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-07-29 23:28:59,021 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_MCOConfig is not available in your config.xml file
+2023-07-29 23:28:59,021 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-07-29 23:28:59,021 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-07-29 23:28:59,037 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-07-29 23:28:59,037 [WARN] CodeGenerator:3760 - IP not found : null
+2023-07-29 23:28:59,052 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\main.h_save
+2023-07-29 23:28:59,184 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\main.h
+2023-07-29 23:28:59,200 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\main.c_save
+2023-07-29 23:28:59,407 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\main.c
+2023-07-29 23:29:00,637 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 450mS.
+2023-07-29 23:29:00,653 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-07-29 23:29:01,022 [INFO] ConfigFileManager:1457 - The Die is : DIE414
+2023-07-29 23:29:04,044 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3391mS.
+2023-07-29 23:29:04,046 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-07-29 23:29:04,059 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-07-29 23:29:29,172 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-07-29 23:29:36,930 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 414002696 Bytes (1069547520)
+2023-07-29 23:29:40,763 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 442459632 Bytes (1069547520)
+2023-07-29 23:29:43,067 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 526490696 Bytes (1069547520)
+2023-07-29 23:29:43,503 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-07-29 23:29:43,504 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-07-29 23:29:43,504 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-07-29 23:29:43,504 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: DMA
+2023-07-29 23:29:43,504 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM6_7F1
+2023-07-29 23:29:43,504 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8F1
+2023-07-29 23:29:43,504 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_DEVICE
+2023-07-29 23:29:43,504 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB
+2023-07-29 23:29:43,504 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-07-29 23:29:43,505 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-07-29 23:29:43,505 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-07-29 23:29:43,506 [INFO] CodeGenerator:799 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.0.202307051724\\db\
+2023-07-29 23:29:43,519 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,519 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,519 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,519 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,519 [INFO] Argument:319 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-07-29 23:29:43,519 [INFO] Argument:329 - Argument : Directionvalue: LL_DMA_DIRECTION_MEMORY_TO_PERIPH
+2023-07-29 23:29:43,520 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,520 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,520 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,520 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,520 [INFO] Argument:319 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-07-29 23:29:43,520 [INFO] Argument:329 - Argument : Priorityvalue: LL_DMA_PRIORITY_LOW
+2023-07-29 23:29:43,520 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,521 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,521 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,521 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,521 [INFO] Argument:319 - Argument : Modevalue: LL_DMA_MODE_NORMAL
+2023-07-29 23:29:43,521 [INFO] Argument:329 - Argument : Modevalue: LL_DMA_MODE_NORMAL
+2023-07-29 23:29:43,521 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,521 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,521 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,521 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,521 [INFO] Argument:319 - Argument : PeriphOrM2MSrcIncModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-07-29 23:29:43,521 [INFO] Argument:329 - Argument : PeriphOrM2MSrcIncModevalue: LL_DMA_PERIPH_NOINCREMENT
+2023-07-29 23:29:43,521 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,521 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,522 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,522 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,522 [INFO] Argument:319 - Argument : MemoryOrM2MDstIncModevalue: LL_DMA_MEMORY_INCREMENT
+2023-07-29 23:29:43,522 [INFO] Argument:329 - Argument : MemoryOrM2MDstIncModevalue: LL_DMA_MEMORY_INCREMENT
+2023-07-29 23:29:43,522 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,522 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,522 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,522 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,522 [INFO] Argument:319 - Argument : PeriphOrM2MSrcDataSizevalue: LL_DMA_PDATAALIGN_HALFWORD
+2023-07-29 23:29:43,522 [INFO] Argument:329 - Argument : PeriphOrM2MSrcDataSizevalue: LL_DMA_PDATAALIGN_HALFWORD
+2023-07-29 23:29:43,522 [INFO] Argument:319 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,522 [INFO] Argument:329 - Argument : DMAxvalue: DMA1
+2023-07-29 23:29:43,522 [INFO] Argument:319 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,523 [INFO] Argument:329 - Argument : Channelvalue: LL_DMA_CHANNEL_3
+2023-07-29 23:29:43,523 [INFO] Argument:319 - Argument : MemoryOrM2MDstDataSizevalue: LL_DMA_MDATAALIGN_HALFWORD
+2023-07-29 23:29:43,523 [INFO] Argument:329 - Argument : MemoryOrM2MDstDataSizevalue: LL_DMA_MDATAALIGN_HALFWORD
+2023-07-29 23:29:43,764 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\license.tmp_save
+2023-07-29 23:29:43,877 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\license.tmp
+2023-07-29 23:29:44,144 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\gpio.tmp_save
+2023-07-29 23:29:44,264 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\gpio.tmp
+2023-07-29 23:29:44,365 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_vars.tmp_save
+2023-07-29 23:29:44,479 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_vars.tmp
+2023-07-29 23:29:44,487 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_inc.tmp_save
+2023-07-29 23:29:44,598 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_inc.tmp
+2023-07-29 23:29:44,606 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_HalInit.tmp_save
+2023-07-29 23:29:44,731 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_HalInit.tmp
+2023-07-29 23:29:44,739 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_Msp.tmp_save
+2023-07-29 23:29:44,875 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\usb_Msp.tmp
+2023-07-29 23:29:45,291 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-07-29 23:29:45,329 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma.tmp_save
+2023-07-29 23:29:45,455 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma.tmp
+2023-07-29 23:29:45,463 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma_GV.tmp_save
+2023-07-29 23:29:45,571 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\dma_GV.tmp
+2023-07-29 23:29:45,588 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-07-29 23:29:45,608 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.c_save
+2023-07-29 23:29:45,798 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.c
+2023-07-29 23:29:45,811 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.h_save
+2023-07-29 23:29:45,941 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usb_device.h
+2023-07-29 23:29:45,953 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.h_save
+2023-07-29 23:29:46,087 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.h
+2023-07-29 23:29:46,101 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.c_save
+2023-07-29 23:29:46,256 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\Target\usbd_conf.c
+2023-07-29 23:29:46,269 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.h_save
+2023-07-29 23:29:46,399 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.h
+2023-07-29 23:29:46,413 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.c_save
+2023-07-29 23:29:46,594 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_desc.c
+2023-07-29 23:29:46,610 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.h_save
+2023-07-29 23:29:46,734 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.h
+2023-07-29 23:29:46,747 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.c_save
+2023-07-29 23:29:46,873 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\USB_DEVICE\App\usbd_storage_if.c
+2023-07-29 23:29:46,902 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_it.c_save
+2023-07-29 23:29:47,058 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_it.c
+2023-07-29 23:29:47,070 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_it.h_save
+2023-07-29 23:29:47,188 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_it.h
+2023-07-29 23:29:47,215 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_hal_msp.c_save
+2023-07-29 23:29:47,372 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\stm32f1xx_hal_msp.c
+2023-07-29 23:29:47,380 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\system.tmp_save
+2023-07-29 23:29:47,491 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\MXTmpFiles\system.tmp
+2023-07-29 23:29:47,501 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32_assert.h_save
+2023-07-29 23:29:47,617 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32_assert.h
+2023-07-29 23:29:47,639 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-07-29 23:29:47,771 [INFO] CodeEngine:335 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\stm32f1xx_hal_conf.h
+2023-07-29 23:29:47,796 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2023-07-29 23:29:47,797 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_MCOConfig is not available in your config.xml file
+2023-07-29 23:29:47,797 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2023-07-29 23:29:47,797 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2023-07-29 23:29:47,811 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-07-29 23:29:47,813 [WARN] CodeGenerator:3760 - IP not found : null
+2023-07-29 23:29:47,831 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\main.h_save
+2023-07-29 23:29:47,960 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Inc\main.h
+2023-07-29 23:29:47,974 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\main.c_save
+2023-07-29 23:29:48,191 [INFO] CodeEngine:279 - Generated code: C:\Users\inflamer\STM32CubeIDE\aquapark\application\Core\Src\main.c
+2023-07-29 23:29:49,209 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 374mS.
+2023-07-29 23:29:49,225 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-07-29 23:29:49,928 [INFO] ConfigFileManager:1457 - The Die is : DIE414
+2023-07-29 23:29:52,717 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3491mS.
+2023-07-29 23:29:52,718 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-07-29 23:29:52,732 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.

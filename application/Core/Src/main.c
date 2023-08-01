@@ -24,6 +24,7 @@
 /* USER CODE BEGIN Includes */
 //#include "test.h"
 #include "font8sans.h"
+#include "font16.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -48,6 +49,7 @@
 dcount_t cnt1;
 uint8_t cntupd = 0;
 char str[] = "00.00";
+char mixstr[] = "0000";
 
 typedef struct type21{ uint8_t x; uint8_t y;}type21;
 
@@ -56,6 +58,18 @@ typedef struct type21{ uint8_t x; uint8_t y;}type21;
 volatile type21 test123[3] ={{1,2},{1,2},{1,2}};
 
 
+
+const uint16_t st_text[] = {
+		0x0000,
+		0x33D2,
+		0x4A14,
+
+		0x4398,
+		0x4A14,
+		0x33D2,
+		0x0000,
+		0x0000,
+};
 //bool bufrw=true;
 //bool wfdt=true;
 uint8_t str_cnt=0;
@@ -97,6 +111,7 @@ static void MX_RTC_Init(void);
 /* USER CODE BEGIN PFP */
 void cpToLPBuffer(void);
 void putStrToBuff(char *str);
+void putStrToBuffMix(char *str);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -141,6 +156,7 @@ int main(void)
   MX_TIM6_Init();
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
+  LL_EXTI_DisableIT_0_31(LL_EXTI_LINE_5 | LL_EXTI_LINE_6 | LL_EXTI_LINE_7);
   LL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 
 
@@ -148,7 +164,7 @@ int main(void)
   LL_TIM_ClearFlag_UPDATE(TIM3);
   LL_TIM_EnableIT_UPDATE(TIM3);
   LL_TIM_CC_EnableChannel(TIM3, LL_TIM_CHANNEL_CH4);
-  LL_TIM_OC_SetCompareCH4(TIM3, 29000);//170 - 15001);
+  LL_TIM_OC_SetCompareCH4(TIM3, 29000);//170 - 30001);
 
   LL_TIM_EnableCounter(TIM6);
 
@@ -338,7 +354,10 @@ int main(void)
   }
   */
 
-  /* USER CODE END 2 */
+
+
+
+  	  /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -349,12 +368,12 @@ int main(void)
 	  __NOP();
 
 	  if (cntupd) {
-	  str[0] = '0' + cnt1.c3;
-	  str[1] = '0' + cnt1.c2;
-	  str[3] = '0' + cnt1.c1;
-	  str[4] = '0' + cnt1.c0;
+	  mixstr[0] = '0' + cnt1.c3;
+	  mixstr[1] = '0' + cnt1.c2;
+	  mixstr[2] = '0' + cnt1.c1;
+	  mixstr[3] = '0' + cnt1.c0;
 
-	  putStrToBuff(str);
+	  putStrToBuffMix(mixstr);
 	  cpToLPBuffer();
 	  cntupd = 0;
 	  };
@@ -568,7 +587,7 @@ static void MX_TIM3_Init(void)
   TIM_OC_InitStruct.OCMode = LL_TIM_OCMODE_PWM1;
   TIM_OC_InitStruct.OCState = LL_TIM_OCSTATE_DISABLE;
   TIM_OC_InitStruct.OCNState = LL_TIM_OCSTATE_DISABLE;
-  TIM_OC_InitStruct.CompareValue = 10000;
+  TIM_OC_InitStruct.CompareValue = 30001;
   TIM_OC_InitStruct.OCPolarity = LL_TIM_OCPOLARITY_HIGH;
   LL_TIM_OC_Init(TIM3, LL_TIM_CHANNEL_CH4, &TIM_OC_InitStruct);
   LL_TIM_OC_DisableFast(TIM3, LL_TIM_CHANNEL_CH4);
@@ -650,6 +669,7 @@ static void MX_DMA_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+  LL_EXTI_InitTypeDef EXTI_InitStruct = {0};
   LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
 /* USER CODE BEGIN MX_GPIO_Init_1 */
 /* USER CODE END MX_GPIO_Init_1 */
@@ -670,6 +690,58 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /**/
+  LL_GPIO_AF_SetEXTISource(LL_GPIO_AF_EXTI_PORTB, LL_GPIO_AF_EXTI_LINE5);
+
+  /**/
+  LL_GPIO_AF_SetEXTISource(LL_GPIO_AF_EXTI_PORTB, LL_GPIO_AF_EXTI_LINE6);
+
+  /**/
+  LL_GPIO_AF_SetEXTISource(LL_GPIO_AF_EXTI_PORTB, LL_GPIO_AF_EXTI_LINE7);
+
+  /**/
+  EXTI_InitStruct.Line_0_31 = LL_EXTI_LINE_5;
+  EXTI_InitStruct.LineCommand = ENABLE;
+  EXTI_InitStruct.Mode = LL_EXTI_MODE_IT;
+  EXTI_InitStruct.Trigger = LL_EXTI_TRIGGER_RISING_FALLING;
+  LL_EXTI_Init(&EXTI_InitStruct);
+
+  /**/
+  EXTI_InitStruct.Line_0_31 = LL_EXTI_LINE_6;
+  EXTI_InitStruct.LineCommand = ENABLE;
+  EXTI_InitStruct.Mode = LL_EXTI_MODE_IT;
+  EXTI_InitStruct.Trigger = LL_EXTI_TRIGGER_RISING_FALLING;
+  LL_EXTI_Init(&EXTI_InitStruct);
+
+  /**/
+  EXTI_InitStruct.Line_0_31 = LL_EXTI_LINE_7;
+  EXTI_InitStruct.LineCommand = ENABLE;
+  EXTI_InitStruct.Mode = LL_EXTI_MODE_IT;
+  EXTI_InitStruct.Trigger = LL_EXTI_TRIGGER_RISING_FALLING;
+  LL_EXTI_Init(&EXTI_InitStruct);
+
+  /**/
+  LL_GPIO_SetPinPull(GPIOB, LL_GPIO_PIN_5, LL_GPIO_PULL_DOWN);
+
+  /**/
+  LL_GPIO_SetPinPull(GPIOB, LL_GPIO_PIN_6, LL_GPIO_PULL_DOWN);
+
+  /**/
+  LL_GPIO_SetPinPull(GPIOB, LL_GPIO_PIN_7, LL_GPIO_PULL_DOWN);
+
+  /**/
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_5, LL_GPIO_MODE_INPUT);
+
+  /**/
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_6, LL_GPIO_MODE_INPUT);
+
+  /**/
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_7, LL_GPIO_MODE_INPUT);
+
+  /* EXTI interrupt init*/
+  NVIC_SetPriority(EXTI9_5_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),3, 0));
+  NVIC_EnableIRQ(EXTI9_5_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
@@ -708,6 +780,57 @@ void putStrToBuff(char *string){
 
 	  display_buffer[i][0] = (tmp >> 16);
 	  display_buffer[i][1] = (tmp);
+
+	  };
+
+
+}
+
+void putStrToBuffMix(char *string){
+		char *s ;
+		uint8_t count;
+	  uint8_t rpos, bpos, st_pos, w;
+	  for (uint8_t i=0;i<8;i++){
+		  s=string;
+		  st_pos = 32;
+		  count = 0;
+	  uint32_t tmp = 0;
+	  uint32_t tmp1 = 0;
+	  while (*s != '\0'){
+		  if (count <2){
+			  count++;
+
+			  rpos = *s - font_16pt_info.stchar;
+			  w = font_16ptChrsDescr[rpos].size;
+			  bpos = font_16ptChrsDescr[rpos].position;
+			  st_pos -= w;
+			  tmp |= font_16ptBtmps[bpos + i] << st_pos;
+			  tmp1 |= font_16ptBtmps[bpos+8 + i] << st_pos;
+			  st_pos--;
+
+
+
+
+		  }
+		  else{
+			  if (count == 2){st_pos -= 2;count++;};
+		  rpos = *s - font_8pt_info.stchar;
+		  w = font_8ptChrsDescr[rpos].size;
+		  bpos = font_8ptChrsDescr[rpos].position;
+		  st_pos -= w;
+		  tmp |= font_8ptBtmps[bpos + i] << st_pos;
+		  tmp1 |= st_text[i];
+		  st_pos--;
+		  }
+		  s++;
+
+	  };
+
+	  display_buffer[i][0] = (tmp >> 16);
+	  display_buffer[i][1] = (tmp);
+
+	  display_buffer[i+8][0] = (tmp1 >> 16);
+	  display_buffer[i+8][1] = (tmp1);
 
 	  };
 

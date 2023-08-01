@@ -1,21 +1,22 @@
-23:30:54 **** Incremental Build of configuration Debug for project application ****
+02:58:25 **** Incremental Build of configuration Debug for project application ****
 make -j4 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xE -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32F103xE -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:309:19: warning: unused variable 'chars' [-Wunused-variable]
-  309 |           uint8_t chars;
+../Core/Src/main.c:325:19: warning: unused variable 'chars' [-Wunused-variable]
+  325 |           uint8_t chars;
       |                   ^~~~~
-../Core/Src/main.c:308:19: warning: unused variable 'positions' [-Wunused-variable]
-  308 |           uint8_t positions;
+../Core/Src/main.c:324:19: warning: unused variable 'positions' [-Wunused-variable]
+  324 |           uint8_t positions;
       |                   ^~~~~~~~~
-../Core/Src/main.c:216:12: warning: unused variable 'tmp' [-Wunused-variable]
-  216 |    uint8_t tmp;
+../Core/Src/main.c:232:12: warning: unused variable 'tmp' [-Wunused-variable]
+  232 |    uint8_t tmp;
       |            ^~~
-../Core/Src/main.c:215:11: warning: unused variable 'width' [-Wunused-variable]
-  215 |   uint8_t width;
+../Core/Src/main.c:231:11: warning: unused variable 'width' [-Wunused-variable]
+  231 |   uint8_t width;
       |           ^~~~~
-../Core/Src/main.c:186:21: warning: variable 'test' set but not used [-Wunused-but-set-variable]
-  186 |   volatile uint32_t test;
+../Core/Src/main.c:202:21: warning: variable 'test' set but not used [-Wunused-but-set-variable]
+  202 |   volatile uint32_t test;
       |                     ^~~~
 arm-none-eabi-gcc -o "application.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\inflamer\STM32CubeIDE\aquapark\application\STM32F103RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="application.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: application.elf
@@ -24,7 +25,7 @@ arm-none-eabi-size   application.elf
 arm-none-eabi-objdump -h -S  application.elf  > "application.list"
 arm-none-eabi-objcopy  -O ihex  application.elf  "application.hex"
    text	   data	    bss	    dec	    hex	filename
-  39428	    312	   4304	  44044	   ac0c	application.elf
+  41332	    320	   4304	  45956	   b384	application.elf
 Finished building: default.size.stdout
  
 Finished building: application.hex
@@ -32,5 +33,5 @@ Finished building: application.hex
 Finished building: application.list
  
 
-23:30:57 Build Finished. 0 errors, 5 warnings. (took 2s.732ms)
+02:58:28 Build Finished. 0 errors, 5 warnings. (took 2s.944ms)
 

@@ -4,6 +4,8 @@
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:930:22:LL_DMA_ConfigAddresses	2
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:1228:26:LL_DMA_IsActiveFlag_TC3	1
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h:1536:22:LL_DMA_ClearFlag_TC3	1
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h:774:26:LL_EXTI_IsActiveFlag_0_31	1
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h:842:22:LL_EXTI_ClearFlag_0_31	1
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h:758:26:LL_SPI_IsActiveFlag_BSY	2
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_spi.h:1011:26:LL_SPI_DMA_GetRegAddr	1
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h:2979:22:LL_TIM_ClearFlag_UPDATE	1
@@ -22,7 +24,9 @@
 ../Core/Src/stm32f1xx_it.c:161:6:DebugMon_Handler	1
 ../Core/Src/stm32f1xx_it.c:174:6:PendSV_Handler	1
 ../Core/Src/stm32f1xx_it.c:187:6:SysTick_Handler	1
-../Core/Src/stm32f1xx_it.c:208:6:DMA1_Channel3_IRQHandler	3
-../Core/Src/stm32f1xx_it.c:229:6:USB_LP_CAN1_RX0_IRQHandler	1
-../Core/Src/stm32f1xx_it.c:243:6:TIM3_IRQHandler	4
-../Core/Src/stm32f1xx_it.c:284:6:TIM6_IRQHandler	6
+../Core/Src/stm32f1xx_it.c:208:6:PVD_IRQHandler	1
+../Core/Src/stm32f1xx_it.c:222:6:DMA1_Channel3_IRQHandler	3
+../Core/Src/stm32f1xx_it.c:243:6:USB_LP_CAN1_RX0_IRQHandler	1
+../Core/Src/stm32f1xx_it.c:257:6:EXTI9_5_IRQHandler	4
+../Core/Src/stm32f1xx_it.c:291:6:TIM3_IRQHandler	4
+../Core/Src/stm32f1xx_it.c:332:6:TIM6_IRQHandler	6
